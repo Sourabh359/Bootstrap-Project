@@ -19,10 +19,6 @@ header {
     padding: 15px 0;
 }
 
-header ul li a.act {
-    color: var(--accent-color);
-}
-
 header ul li.nav-item a:hover {
     color: var(--accent-color);
 }
@@ -542,9 +538,9 @@ footer .credits a {
     width: 44px;
     height: 44px;
     bottom: -15px;
-    z-index: 1;
-    border-radius: 50px;
-    transition: all 0.4s;
+    /* z-index: 1; */
+    border-radius: 50%;
+    transition: opacity 0.4s , button 0.4s;
 }
 
 .scroll-top.active {
@@ -559,3 +555,296 @@ footer .credits a {
     line-height: 0;
 }
 
+.about-title{
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 80px 0;
+}
+
+.about-title h2{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.section-trainer , .events-section, .pricing-section, .contact-section{
+    color: var(--default-color);
+    padding: 60px 0;
+    scroll-margin-top: 900px;
+    overflow: clip;
+}
+
+.section-trainer .trainer-member{
+    position: relative;
+}
+
+.section-trainer .member-img{
+    margin: 0 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-trainer .member-img img{
+    position: relative;
+    z-index: 1;
+}
+
+.section-trainer .member-img .social{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.section-trainer .trainer-member:hover .social{
+    visibility: visible;
+    opacity: 1;
+    padding-bottom: 0;
+}
+
+.section-trainer .member-img .social a{
+    transition: 0.3s;
+    color: var(--contrast-color);
+    font-size: 20px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.section-trainer .member-info{
+    margin-top: 30px;
+}
+
+.section-trainer .member-info h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.section-trainer .member-info span{
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin-bottom: 10px;
+}
+
+.section-trainer .member-info p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.events-section .card{
+    position: relative;
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    background-color: var(--background-color);
+}
+
+.events-section .card-img{
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.events-section .card img{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.events-section .card:hover img{
+    transform: scale(1.1);
+}
+
+.events-section .card-body{
+    background: var(--surface-color);
+    border-top: 4px solid var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: -60px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.events-section .card:hover .card-body{
+    border-color: var(--accent-color);
+}
+
+.events-section .card-title{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.events-section .card:hover .card-body h5{
+    color: var(--accent-color);
+}
+
+.events-section .card-text{
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.pricing-section .pricing-item{
+    background-color: var(--surface-color);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-section .pricing-item h3{
+    margin: -20px -20px 20px -20px;
+    padding: 20px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    background: color-mix(in srgb, var(--default-color), transparent 95%);
+}
+
+.pricing-section .pricing-item h4{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.pricing-section .pricing-item h4 sup{
+    font-size: 20px;
+    top: -15px;
+    left: -3px;
+}
+
+.pricing-section .pricing-item h4 span{
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pricing-section .pricing-item ul {
+    padding: 15px 0;
+    list-style: none;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+.pricing-section .pricing-item ul li {
+    padding-bottom: 16px;
+}
+
+.pricing-section .pricing-item ul .not {
+    color: 
+ color-mix(in srgb, var(--default-color), transparent 40%);
+    text-decoration: line-through;
+}
+
+.pricing-section .pricing-item .btn-wrap {
+    background:color-mix(in srgb, var(--default-color), transparent 95%);
+    margin: 0 -20px -20px -20px;
+    padding: 20px 15px;
+}
+
+.pricing-section .pricing-item .btn-buy {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 4px;
+    transition: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.pricing-section .pricing-item .business{
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+}
+
+.pricing-section .pricing-item .advanced {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    width: 200px;
+    position: absolute;
+    top: 18px;
+    right: -68px;
+    transform: rotate(45deg);
+    z-index: 1;
+    font-size: 14px;
+    padding: 1px 0 3px 0;
+}
+
+.contact-section .info-item{
+    margin-bottom: 40px;
+}
+
+.contact-section .info-item i {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    font-size: 20px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.contact-section .info-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.contact-section .info-item p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.contact-section .form{
+    height: 100%;
+}
+
+.contact-section .form input[type=text],.form input[type=email], .contact-section .form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: var(--default-color);
+    background-color: 
+ color-mix(in srgb, var(--background-color), transparent 50%);
+    border-color: 
+ color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact-section .form button{
+    color: var(--contrast-color);
+    background: var(--accent-color);
+    border: 0;
+    padding: 10px 30px 13px;
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width: 768px){ 
+    .wrap-3 .content-para{
+        order: 1;
+    }
+    .wrap-3 img{
+        order: 2;
+    }
+}
