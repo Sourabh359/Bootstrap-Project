@@ -164,4 +164,4 @@ This project can be deployed easily using **Netlify**.
 
 **Sourabh**
 
-GitHub: [Your GitHub Profile](Sourabh359)
+GitHub: [My GitHub Profile](https://github.com/Sourabh359)
