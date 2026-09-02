@@ -11,31 +11,31 @@ The project contains multiple pages with a clean and responsive layout designed 
 
 ### Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/Home.png)
 
 ### About Page
 
-![About Page](screenshots/about.png)
+![About Page](screenshots/About.png)
 
 ### Courses Page
 
-![Courses Page](screenshots/courses.png)
+![Courses Page](screenshots/Courses.png)
 
 ### Trainers Page
 
-![Trainers Page](screenshots/trainers.png)
+![Trainers Page](screenshots/Trainers.png)
 
 ### Events Page
 
-![Events Page](screenshots/events.png)
+![Events Page](screenshots/Events.png)
 
 ### Pricing Page
 
-![Events Page](screenshots/pricing.png)
+![Pricing Page](screenshots/Pricing.png)
 
 ### Contact Page
 
-![Events Page](screenshots/contact.png)
+![Contact Page](screenshots/Contact.png)
 
 ## ✨ Features
 
